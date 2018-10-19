@@ -63,7 +63,7 @@ $client->request('GET', 'https://.../api/timeseries/ABCDEF123456?start_time=2018
 
 ##### Python (with “Flask“ and “Requests” libraries):
 
-```
+```python
 from flask import request
 import requests
 
@@ -170,7 +170,7 @@ whoAmI(function(identify){
 
 ##### With identified function as callback argument
 ```javascript
-function handlingIdentity(identify){
+function handlingIdentity(identity){
     console.log(identity);
 }
 
