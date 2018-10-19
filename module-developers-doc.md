@@ -96,7 +96,7 @@ That means that, on the module side, you need to :
 2. Listen for a message from the portal (parent frame) to handle the data.
 
 ### JavaScript Sample Code
-#### Sending the ```whoami``` message to the portal 
+#### Sending the ```whoami``` message to the portal
 ```javascript
 parent.postMessage('whoami', document.location.origin);
 ```
@@ -107,11 +107,11 @@ window.addEventListener('message', function(event) {
     var info = JSON.parse(event.data);
     switch (info.responseToMessage) {
         case 'whoami':
-            
+
             //...
             //HERE IS YOUR CODE MANAGING THE RECEIVED DATA
             //...
-            
+
             break;
         default:
             console.warn('No response, message unknown: ' + info.responseToMessage);
@@ -124,7 +124,7 @@ window.addEventListener('message', function(event) {
 ### JavaScript whoAmi() implementation
 In order to facilitate the integration of that postMessage() process, you'll find at the following URL a fully functional sample code allowing you to only have to call a ```whoAmI()``` function with a callback function as argument.
 
-https://portal2.h2g-platform-core-staging.nobatek.com/static/js/module.js
+https://portal.h2g-platform-core.nobatek.com/static/js/module.js
 
 ```javascript
 var whoAmICallback = null;
